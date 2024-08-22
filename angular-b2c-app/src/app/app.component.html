@@ -1,0 +1,7 @@
+<div *ngIf="!isLoggedIn">
+  <button (click)="login()">Iniciar sesión</button>
+</div>
+<div *ngIf="isLoggedIn">
+  <p>Has iniciado sesión!</p>
+  <button (click)="logout()">Cerrar sesión</button>
+</div>
